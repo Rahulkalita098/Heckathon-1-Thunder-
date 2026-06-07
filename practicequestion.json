@@ -1,0 +1,212 @@
+{
+  "lec01": [
+    {
+      "id": "q1-1",
+      "title": "Mission 01: The First Signal",
+      "difficulty": "Beginner",
+      "description": "Welcome to the Engineering Bay. Before we launch, we must establish comms.\n\n**Task:**\nUse `console.log()` to print the exact phrase: `'Hello, Earth!'`.",
+      "initialCode": "// Write your command below:\n",
+      "validation": "if (!consoleHistory.includes('Hello, Earth!')) throw new Error('You did not print \"Hello, Earth!\" to the console.');"
+    },
+    {
+      "id": "q1-2",
+      "title": "Mission 02: Fuel Variables",
+      "difficulty": "Beginner",
+      "description": "We need to store our fuel data.\n\n**Task:**\nCreate a variable named `fuel` using the `let` keyword, and set it to `100`.",
+      "initialCode": "// Create your fuel variable below:\n",
+      "validation": "if (typeof fuel === 'undefined') throw new Error('The variable \"fuel\" does not exist.'); if (fuel !== 100) throw new Error('fuel is not equal to 100.');"
+    },
+    {
+      "id": "q1-3",
+      "title": "Mission 03: Changing Values",
+      "difficulty": "Easy",
+      "description": "Variables made with `let` can change. \n\n**Task:**\nWe have a variable `speed` set to 0. On the next line, change its value to `50`.",
+      "initialCode": "let speed = 0;\n// Update the speed variable below:\n",
+      "validation": "if (speed !== 50) throw new Error('speed is not equal to 50.');"
+    },
+    {
+      "id": "q1-4",
+      "title": "Mission 04: The Universal Constant",
+      "difficulty": "Easy",
+      "description": "Some things should never change. \n\n**Task:**\nCreate a variable named `gravity` using the `const` keyword and set it to `9.8`.",
+      "initialCode": "// Create your constant below:\n",
+      "validation": "if (typeof gravity === 'undefined') throw new Error('The variable \"gravity\" does not exist.'); if (gravity !== 9.8) throw new Error('gravity is not 9.8');"
+    },
+    {
+      "id": "q1-5",
+      "title": "Mission 05: Basic Mathematics",
+      "difficulty": "Easy",
+      "description": "Let's calculate the total weight.\n\n**Task:**\nCreate a variable called `totalWeight` that adds `150` and `200` together using the `+` operator.",
+      "initialCode": "// Calculate the total weight below:\n",
+      "validation": "if (typeof totalWeight === 'undefined') throw new Error('The variable \"totalWeight\" does not exist.'); if (totalWeight !== 350) throw new Error('totalWeight did not equal 350.');"
+    }
+  ],
+  "lec02": [
+    {
+      "id": "q2-1",
+      "title": "Mission 01: String Types",
+      "difficulty": "Beginner",
+      "description": "**Task:**\nCreate a variable `pilotName` and set it to a string containing your name.",
+      "initialCode": "// Create pilotName below:\n",
+      "validation": "if (typeof pilotName !== 'string') throw new Error('pilotName must be a string (wrapped in quotes).'); if (pilotName.length === 0) throw new Error('The string cannot be empty.');"
+    },
+    {
+      "id": "q2-2",
+      "title": "Mission 02: Boolean Logic",
+      "difficulty": "Beginner",
+      "description": "**Task:**\nCreate a variable `isEngineOn` and set it to the boolean value `true`.",
+      "initialCode": "// Create the boolean variable below:\n",
+      "validation": "if (typeof isEngineOn !== 'boolean') throw new Error('isEngineOn must be a boolean.'); if (isEngineOn !== true) throw new Error('isEngineOn must be true.');"
+    },
+    {
+      "id": "q2-3",
+      "title": "Mission 03: The typeof Operator",
+      "difficulty": "Easy",
+      "description": "**Task:**\nUse `console.log()` and the `typeof` operator to print the data type of the variable `mysteryData`.",
+      "initialCode": "let mysteryData = 42;\n// Check the type below:\n",
+      "validation": "if (!consoleHistory.includes('number')) throw new Error('You did not log the correct type (number).');"
+    },
+    {
+      "id": "q2-4",
+      "title": "Mission 04: Object Creation",
+      "difficulty": "Medium",
+      "description": "**Task:**\nCreate an object named `spaceship` with two properties: `color` (a string) and `speed` (a number).",
+      "initialCode": "// Create your object below:\n",
+      "validation": "if (typeof spaceship !== 'object') throw new Error('spaceship must be an object.'); if (!spaceship.color || typeof spaceship.speed !== 'number') throw new Error('spaceship is missing color or speed properties.');"
+    },
+    {
+      "id": "q2-5",
+      "title": "Mission 05: Array Lists",
+      "difficulty": "Medium",
+      "description": "**Task:**\nCreate an array named `planets` containing three strings: `'Earth'`, `'Mars'`, and `'Jupiter'`.",
+      "initialCode": "// Create your array below:\n",
+      "validation": "if (!Array.isArray(planets)) throw new Error('planets must be an array.'); if (planets.length !== 3) throw new Error('Array must contain exactly 3 items.');"
+    }
+  ],
+  "lec03": [
+    {
+      "id": "q3-1",
+      "title": "Mission 01: Modulo Operator",
+      "difficulty": "Beginner",
+      "description": "**Task:**\nCreate a variable `remainder` that stores the result of `10 % 3`.",
+      "initialCode": "// Write your code below:\n",
+      "validation": "if (remainder !== 1) throw new Error('The remainder should be 1.');"
+    },
+    {
+      "id": "q3-2",
+      "title": "Mission 02: Incrementing",
+      "difficulty": "Beginner",
+      "description": "**Task:**\nUse the increment operator (`++`) to increase the variable `level` by exactly 1.",
+      "initialCode": "let level = 5;\n// Increment level below:\n",
+      "validation": "if (level !== 6) throw new Error('level was not incremented to 6.');"
+    },
+    {
+      "id": "q3-3",
+      "title": "Mission 03: Strict Equality",
+      "difficulty": "Easy",
+      "description": "**Task:**\nCreate a variable `isMatch` that checks if `5 === '5'` and stores the boolean result.",
+      "initialCode": "// Write your code below:\n",
+      "validation": "if (isMatch !== false) throw new Error('Strict equality should result in false here.');"
+    },
+    {
+      "id": "q3-4",
+      "title": "Mission 04: Logical AND",
+      "difficulty": "Medium",
+      "description": "**Task:**\nCreate a variable `canLaunch`. Set it to check if BOTH `hasFuel` and `doorsClosed` are true using `&&`.",
+      "initialCode": "let hasFuel = true;\nlet doorsClosed = true;\n// Write your code below:\n",
+      "validation": "if (canLaunch !== true) throw new Error('canLaunch should be true.');"
+    },
+    {
+      "id": "q3-5",
+      "title": "Mission 05: Ternary Operator",
+      "difficulty": "Hard",
+      "description": "**Task:**\nUse a ternary operator (`? :`) to check if `score > 50`. If true, set `result` to `'Pass'`, otherwise `'Fail'`.",
+      "initialCode": "let score = 60;\nlet result = // Complete this line\n",
+      "validation": "if (result !== 'Pass') throw new Error('result should evaluate to Pass.');"
+    }
+  ],
+  "lec04": [
+    {
+      "id": "q4-1",
+      "title": "Mission 01: Math.floor",
+      "difficulty": "Beginner",
+      "description": "**Task:**\nUse `Math.floor()` to round `4.9` down to the nearest whole number and store it in a variable named `rounded`.",
+      "initialCode": "// Write your code below:\n",
+      "validation": "if (rounded !== 4) throw new Error('rounded should be 4.');"
+    },
+    {
+      "id": "q4-2",
+      "title": "Mission 02: String Length",
+      "difficulty": "Beginner",
+      "description": "**Task:**\nFind out how many characters are in `secretCode` by accessing its `.length` property. Store it in a variable called `codeLength`.",
+      "initialCode": "let secretCode = 'AlphaOmega99';\n// Write your code below:\n",
+      "validation": "if (codeLength !== 12) throw new Error('codeLength should be 12.');"
+    },
+    {
+      "id": "q4-3",
+      "title": "Mission 03: Uppercase Conversion",
+      "difficulty": "Easy",
+      "description": "**Task:**\nConvert `signal` to all uppercase letters using `.toUpperCase()` and store the result in `loudSignal`.",
+      "initialCode": "let signal = 'help';\n// Write your code below:\n",
+      "validation": "if (loudSignal !== 'HELP') throw new Error('loudSignal must be HELP.');"
+    },
+    {
+      "id": "q4-4",
+      "title": "Mission 04: Slicing Strings",
+      "difficulty": "Medium",
+      "description": "**Task:**\nUse `.slice()` to extract the word `'Orbit'` from the string `'CodeOrbit'` and store it in a variable named `extracted`.",
+      "initialCode": "let brand = 'CodeOrbit';\n// Write your code below:\n",
+      "validation": "if (extracted !== 'Orbit') throw new Error('extracted should contain exactly Orbit.');"
+    },
+    {
+      "id": "q4-5",
+      "title": "Mission 05: Replace Words",
+      "difficulty": "Medium",
+      "description": "**Task:**\nUse `.replace()` to change the word `'Red'` to `'Green'` in the string. Store it in `fixedStatus`.",
+      "initialCode": "let status = 'System is Red';\n// Write your code below:\n",
+      "validation": "if (fixedStatus !== 'System is Green') throw new Error('You did not replace the word correctly.');"
+    }
+  ],
+  "lec05": [
+    {
+      "id": "q5-1",
+      "title": "Mission 01: Basic For Loop",
+      "difficulty": "Beginner",
+      "description": "**Task:**\nWrite a `for` loop that runs 3 times. Inside the loop, `console.log('ping')`.",
+      "initialCode": "// Write your loop below:\n",
+      "validation": "let pings = consoleHistory.filter(m => m === 'ping').length; if (pings !== 3) throw new Error('You must log ping exactly 3 times.');"
+    },
+    {
+      "id": "q5-2",
+      "title": "Mission 02: Sum Loop",
+      "difficulty": "Easy",
+      "description": "**Task:**\nWe have a variable `sum = 0`. Write a loop that adds the numbers 1, 2, and 3 to `sum`. (Result should be 6).",
+      "initialCode": "let sum = 0;\n// Write your loop below to add to sum:\n",
+      "validation": "if (sum !== 6) throw new Error('sum did not equal 6.');"
+    },
+    {
+      "id": "q5-3",
+      "title": "Mission 03: Printing Stars",
+      "difficulty": "Easy",
+      "description": "**Task:**\nCreate a loop that appends a `'*'` to the string variable `pattern` 5 times.",
+      "initialCode": "let pattern = '';\n// Write your loop below:\n",
+      "validation": "if (pattern !== '*****') throw new Error('pattern must equal *****');"
+    },
+    {
+      "id": "q5-4",
+      "title": "Mission 04: Loop Break",
+      "difficulty": "Medium",
+      "description": "**Task:**\nWrite a loop from 1 to 10. If the counter `i` equals 5, use the `break` keyword to stop the loop early. Add `i` to `stopValue` before breaking.",
+      "initialCode": "let stopValue = 0;\n// Write your loop below:\n",
+      "validation": "if (stopValue !== 5) throw new Error('stopValue should be 5.');"
+    },
+    {
+      "id": "q5-5",
+      "title": "Mission 05: Nested Access",
+      "difficulty": "Hard",
+      "description": "**Task:**\nYou have an array of arrays. Write a nested loop that calculates the total of all numbers and stores it in `gridTotal`.",
+      "initialCode": "let grid = [[1, 2], [3, 4]];\nlet gridTotal = 0;\n// Write your nested loops below:\n",
+      "validation": "if (gridTotal !== 10) throw new Error('gridTotal did not equal 10.');"
+    }
+  ]
+}

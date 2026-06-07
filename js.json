@@ -1,0 +1,794 @@
+{
+  "lectures": [
+    {
+      "id": "lec01",
+      "title": "Lecture 01: Introduction to Javascript",
+      "date": "2 Jun 2026, 01:49 AM",
+      "duration": "1 hrs 52 mins 43 secs",
+      "content": [
+        {
+          "step": 1,
+          "heading": "What is JavaScript?",
+          "text": "Imagine a website is a house. HTML builds the walls, CSS paints them, but JavaScript wires the electricity. It’s what makes the house interactive—turning on lights and opening doors."
+        },
+        {
+          "step": 2,
+          "heading": "Where does JS live?",
+          "text": "JavaScript lives right inside your web browser. You don't need fancy software to run it; browsers like Chrome or Safari already have a built-in engine to understand it."
+        },
+        {
+          "step": 3,
+          "heading": "The Console Dashboard",
+          "text": "Think of the console as your spaceship's dashboard. It’s a hidden panel where the computer talks to you. You can find it by right-clicking a webpage and selecting 'Inspect'."
+        },
+        {
+          "step": 4,
+          "heading": "Your First Command",
+          "text": "The classic first step is 'console.log()'. Using console.log('Hello, Earth!') is just you printing a message on that dashboard for yourself to read."
+        },
+        {
+          "step": 5,
+          "heading": "What is a Variable?",
+          "text": "A variable is just a labeled box. If you have a box labeled 'Score' and put the number 10 inside, the computer remembers that 'Score' means 10."
+        },
+        {
+          "step": 6,
+          "heading": "The 'let' Keyword",
+          "text": "We create variables using the word 'let'. Typing 'let fuel = 100' tells the computer: 'Create a box named fuel, and put 100 inside it'."
+        },
+        {
+          "step": 7,
+          "heading": "Changing Variables",
+          "text": "The beauty of 'let' is that the box's contents can change. Later, you can say 'fuel = 50', and the computer throws out the 100 and replaces it with 50."
+        },
+        {
+          "step": 8,
+          "heading": "The 'const' Keyword",
+          "text": "Sometimes you want a box that can never be opened or changed. We use 'const' for that. 'const gravity = 9.8' means gravity is locked in forever."
+        },
+        {
+          "step": 9,
+          "heading": "Rules for Naming Boxes",
+          "text": "You can't name a box anything you want. No spaces are allowed, and it can't start with a number. 'myScore' is good, '1st Score' is illegal."
+        },
+        {
+          "step": 10,
+          "heading": "Camel Case Naming",
+          "text": "Programmers write multiple words by capitalizing the start of every word except the first. 'mySpaceshipSpeed'—it looks like the humps of a camel!"
+        },
+        {
+          "step": 11,
+          "heading": "Statements vs Expressions",
+          "text": "A statement is a full sentence or action (like 'Stand up'). An expression is just a piece of math or a value (like '2 + 2' or 'Hello')."
+        },
+        {
+          "step": 12,
+          "heading": "The Semicolon ;",
+          "text": "A semicolon in JavaScript is like a period at the end of an English sentence. It tells the computer, 'I am done giving this specific instruction.'"
+        },
+        {
+          "step": 13,
+          "heading": "Leaving Comments",
+          "text": "Sometimes you want to leave notes for humans that the computer ignores. Putting '//' before text makes it a comment. The computer skips it completely."
+        },
+        {
+          "step": 14,
+          "heading": "Multi-line Comments",
+          "text": "If you have a really long note, you wrap it in '/*' and '*/'. Everything between those symbols is ignored by the machine."
+        },
+        {
+          "step": 15,
+          "heading": "Case Sensitivity",
+          "text": "JavaScript is extremely strict about capitals. 'apple', 'Apple', and 'APPLE' are treated as three completely different things."
+        },
+        {
+          "step": 16,
+          "heading": "Interacting: alert()",
+          "text": "Want to annoy a user? Use 'alert('Warning!')'. It creates a pop-up box on the screen that forces the user to click OK before doing anything else."
+        },
+        {
+          "step": 17,
+          "heading": "Interacting: prompt()",
+          "text": "To ask the user a question, use 'prompt('What is your name?')'. It gives them a pop-up with a text box to type their answer."
+        },
+        {
+          "step": 18,
+          "heading": "Executing Code Top to Bottom",
+          "text": "The computer reads your code exactly like a book: line 1, then line 2, then line 3. It won't skip ahead unless you explicitly tell it to."
+        },
+        {
+          "step": 19,
+          "heading": "The HTML Script Tag",
+          "text": "To link your JavaScript to a website, you put a '<script>' tag in your HTML file. It’s the bridge connecting your code to the visual webpage."
+        },
+        {
+          "step": 20,
+          "heading": "External vs Internal JS",
+          "text": "You can write JS directly inside the HTML file, but it's cleaner to put it in its own separate file (like app.js) and link it. It keeps your workspace organized."
+        },
+        {
+          "step": 21,
+          "heading": "What is an Error?",
+          "text": "When the computer doesn't understand your command, it throws a red error in the console. Don't panic! It's just the computer saying, 'I need you to clarify this.'"
+        },
+        {
+          "step": 22,
+          "heading": "Syntax Errors",
+          "text": "A syntax error means you broke the grammar rules. You forgot a parenthesis, misspelled a word, or missed a quote mark. It's a typo."
+        },
+        {
+          "step": 23,
+          "heading": "Reference Errors",
+          "text": "This happens when you ask the computer for a box (variable) that doesn't exist yet. You asked for 'fuel', but you never actually created the 'fuel' box."
+        },
+        {
+          "step": 24,
+          "heading": "Debugging",
+          "text": "Debugging is the art of being a detective in a crime movie where you are also the murderer. You read the red errors to trace exactly where your code broke."
+        },
+        {
+          "step": 25,
+          "heading": "History of JS",
+          "text": "JavaScript was created in just 10 days in 1995. It was originally built just to make web forms slightly animated, and now it runs everything from websites to rockets."
+        },
+        {
+          "step": 26,
+          "heading": "JS is not Java",
+          "text": "JavaScript and Java have almost nothing in common. Calling them the same is like saying 'Car' and 'Carpet' are the same because they share letters."
+        },
+        {
+          "step": 27,
+          "heading": "The Window Object",
+          "text": "In a browser, the 'Window' is the master container. It represents the actual browser tab you are looking at, and it holds all your code."
+        },
+        {
+          "step": 28,
+          "heading": "Strict Mode",
+          "text": "Typing 'use strict' at the top of your code turns the computer into a strict teacher. It stops you from making lazy mistakes and forces clean coding habits."
+        },
+        {
+          "step": 29,
+          "heading": "Code Execution: Parsing",
+          "text": "Before running anything, the computer quickly scans your whole file to learn where the variables and functions are. This is called parsing."
+        },
+        {
+          "step": 30,
+          "heading": "Ready for Liftoff",
+          "text": "You now know how to talk to the browser, create storage boxes, and read errors. Your spaceship is fueled. Next, we look at what exactly we can put inside those boxes."
+        }
+      ]
+    },
+    {
+      "id": "lec02",
+      "title": "Lecture 02: Data Types in Javascript",
+      "date": "3 Jun 2026, 12:25 AM",
+      "duration": "2 hrs 4 mins 12 secs",
+      "content": [
+        {
+          "step": 1,
+          "heading": "What are Data Types?",
+          "text": "If you are packing a suitcase, you pack liquids in bottles and clothes in bags. Programming is the same. We have different 'types' of data, and we handle them differently."
+        },
+        {
+          "step": 2,
+          "heading": "Two Main Categories",
+          "text": "Data in JS falls into two buckets: Primitive (simple, single things) and Objects (complex collections of things)."
+        },
+        {
+          "step": 3,
+          "heading": "Primitive: Numbers",
+          "text": "Numbers are just math numbers. 5, -10, or 3.14. You don't use quotes around them. You can add, subtract, and multiply them directly."
+        },
+        {
+          "step": 4,
+          "heading": "Primitive: Strings",
+          "text": "Strings are text. They must always be wrapped in quotation marks, like 'Hello' or 'John123'. Without quotes, JS gets confused and thinks it's a variable."
+        },
+        {
+          "step": 5,
+          "heading": "Single vs Double Quotes",
+          "text": "You can use 'single' or \"double\" quotes for strings. JS doesn't care, as long as you match the start and end. If you start with a single, end with a single."
+        },
+        {
+          "step": 6,
+          "heading": "Primitive: Booleans",
+          "text": "A Boolean only has two possible forms: true or false. Think of it as a light switch. It is either completely ON or completely OFF."
+        },
+        {
+          "step": 7,
+          "heading": "Primitive: Undefined",
+          "text": "If you create a box (variable) but forget to put anything inside it, the computer labels its contents as 'undefined'. It means 'I exist, but I'm empty right now.'"
+        },
+        {
+          "step": 8,
+          "heading": "Primitive: Null",
+          "text": "Null is similar to undefined, but it is intentional. It means you purposefully put 'nothing' inside the box. It represents an intentional blank space."
+        },
+        {
+          "step": 9,
+          "heading": "Undefined vs Null",
+          "text": "Undefined is an empty box you forgot to pack. Null is an empty box you specifically labeled 'KEEP EMPTY'. Both represent nothing, but for different reasons."
+        },
+        {
+          "step": 10,
+          "heading": "Primitive: Symbol",
+          "text": "A Symbol is a unique identifier. Even if two Symbols have the same description, they are mathematically guaranteed to be completely unique from each other."
+        },
+        {
+          "step": 11,
+          "heading": "Primitive: BigInt",
+          "text": "Regular JS numbers have a size limit. If you are calculating something massive (like stars in the universe), you use BigInt to allow for infinitely large numbers."
+        },
+        {
+          "step": 12,
+          "heading": "The 'typeof' Operator",
+          "text": "If you don't know what is inside a box, ask the computer! Typing typeof(5) will return 'number'. Typing typeof('hello') returns 'string'."
+        },
+        {
+          "step": 13,
+          "heading": "Dynamic Typing",
+          "text": "Unlike some languages, JS boxes don't care what you put in them. A box can hold a Number today, and you can swap it for a String tomorrow without the computer yelling at you."
+        },
+        {
+          "step": 14,
+          "heading": "String Concatenation",
+          "text": "If you add two strings together ('Hello ' + 'World'), the computer glues them together into one long text block: 'Hello World'."
+        },
+        {
+          "step": 15,
+          "heading": "Adding Numbers vs Strings",
+          "text": "If you do 5 + 5, you get 10. But if you do '5' + '5' (in quotes), JS glues the text together, giving you '55'. Quotes completely change the math!"
+        },
+        {
+          "step": 16,
+          "heading": "Type Coercion",
+          "text": "If you try to add a Number and a String (5 + ' Apples'), JS panics, assumes you want a String, and forces the number to become text, resulting in '5 Apples'."
+        },
+        {
+          "step": 17,
+          "heading": "Type Conversion",
+          "text": "You can manually force data to change types. Number('10') forces the text '10' to become a real mathematical number you can use in equations."
+        },
+        {
+          "step": 18,
+          "heading": "NaN (Not a Number)",
+          "text": "If you try to do math with words, like 10 / 'Apple', the computer returns NaN. It literally means 'Not a Number'—it's the computer's way of saying the math failed."
+        },
+        {
+          "step": 19,
+          "heading": "typeof NaN is Number?",
+          "text": "Weirdly, if you ask typeof(NaN), JS says it's a Number. It's essentially a special number category meant to represent a broken calculation."
+        },
+        {
+          "step": 20,
+          "heading": "Objects: The Complex Type",
+          "text": "Primitives hold one thing. Objects hold many things. Think of an Object like a file cabinet. It's one piece of furniture, but it has many labeled folders inside."
+        },
+        {
+          "step": 21,
+          "heading": "Creating an Object",
+          "text": "We build objects with curly braces {}. let car = { color: 'red', speed: 100 }. We just stored two separate pieces of data inside one 'car' variable."
+        },
+        {
+          "step": 22,
+          "heading": "Arrays (Lists)",
+          "text": "An Array is a special type of Object. It's just a numbered list. let planets = ['Earth', 'Mars', 'Jupiter']. It holds multiple items in a specific order."
+        },
+        {
+          "step": 23,
+          "heading": "Memory: The Stack",
+          "text": "Primitives are small, so the computer stores them in a fast, organized filing drawer called the 'Stack'. It's quick to access but has limited space."
+        },
+        {
+          "step": 24,
+          "heading": "Memory: The Heap",
+          "text": "Objects and Arrays can grow huge, so the computer tosses them into a massive warehouse called the 'Heap'. It's slower to find things, but holds endless data."
+        },
+        {
+          "step": 25,
+          "heading": "Copying Primitives",
+          "text": "If you copy a primitive (let a = b), JS creates a brand new, independent clone. Changing 'a' will never affect 'b'."
+        },
+        {
+          "step": 26,
+          "heading": "Copying Objects (References)",
+          "text": "If you copy an Object, JS doesn't clone it. It just gives you two remote controls pointing to the exact same TV. Changing one affects the other."
+        },
+        {
+          "step": 27,
+          "heading": "Template Literals",
+          "text": "Instead of gluing strings with '+', use backticks (`). You can inject variables directly into the text like this: `Welcome to ${planet}`. It is much cleaner."
+        },
+        {
+          "step": 28,
+          "heading": "Escaping Characters",
+          "text": "If you want to put a quote mark inside a quote ('It's hot'), the computer thinks the string ended early. Use a backslash ('It\\'s hot') to tell the computer to ignore it."
+        },
+        {
+          "step": 29,
+          "heading": "Truthiness",
+          "text": "In JS, every value has a hidden Boolean identity. Numbers, full strings, and objects are secretly considered 'True' if asked to act like a light switch."
+        },
+        {
+          "step": 30,
+          "heading": "Falsiness",
+          "text": "Only a few specific things are secretly 'False': 0, empty strings (''), null, undefined, and NaN. Everything else in the JS universe is True."
+        }
+      ]
+    },
+    {
+      "id": "lec03",
+      "title": "Lecture 03: Operator in Javascript",
+      "date": "5 Jun 2026, 12:15 AM",
+      "duration": "1 hrs 58 mins 56 secs",
+      "content": [
+        {
+          "step": 1,
+          "heading": "What are Operators?",
+          "text": "Operators are the verbs of programming. If variables are the nouns (the objects), operators tell those objects to do something—like combine, subtract, or compare."
+        },
+        {
+          "step": 2,
+          "heading": "The Assignment Operator (=)",
+          "text": "The equals sign doesn't mean 'these are equal'. It means 'take what is on the right, and put it into the box on the left'. It is a loading mechanism."
+        },
+        {
+          "step": 3,
+          "heading": "Arithmetic: Addition (+)",
+          "text": "Just like regular math. 10 + 5 gives 15. If used with strings, it glues them together. It's the most common tool in your kit."
+        },
+        {
+          "step": 4,
+          "heading": "Arithmetic: Subtraction (-)",
+          "text": "Standard subtraction. 10 - 5 gives 5. Unlike addition, you cannot subtract strings. 'Hello' - 'World' will give you an error (NaN)."
+        },
+        {
+          "step": 5,
+          "heading": "Arithmetic: Multiplication (*)",
+          "text": "Use the asterisk symbol for multiplication. 10 * 5 gives 50. Essential for calculating areas, scaling graphics, or determining total costs."
+        },
+        {
+          "step": 6,
+          "heading": "Arithmetic: Division (/)",
+          "text": "Use the forward slash to divide. 10 / 2 gives 5. Remember, dividing by zero in JS doesn't crash the computer; it just returns the concept of 'Infinity'."
+        },
+        {
+          "step": 7,
+          "heading": "The Modulo Operator (%)",
+          "text": "This is the remainder tool. 10 % 3 asks: 'If I divide 10 by 3, what is left over?' The answer is 1. It is perfect for determining if numbers are odd or even."
+        },
+        {
+          "step": 8,
+          "heading": "Exponentiation (**)",
+          "text": "Double asterisk means 'to the power of'. 2 ** 3 means 2 * 2 * 2 (which is 8). It's a quick way to do heavy exponential math."
+        },
+        {
+          "step": 9,
+          "heading": "Increment (++)",
+          "text": "Typing 'score++' is a shortcut. It means 'take the current score, and add exactly 1 to it'. We use this constantly in games and loops."
+        },
+        {
+          "step": 10,
+          "heading": "Decrement (--)",
+          "text": "The opposite of increment. 'lives--' means 'subtract exactly 1 from the current lives'. Perfect for countdowns."
+        },
+        {
+          "step": 11,
+          "heading": "Compound Assignment (+=)",
+          "text": "Instead of typing 'cash = cash + 50', you can just type 'cash += 50'. It is a faster way to update a variable based on its own current value."
+        },
+        {
+          "step": 12,
+          "heading": "Compound Subtraction (-=)",
+          "text": "Works exactly like addition. 'health -= 20' immediately removes 20 from the health variable. You can also do this with *= and /=."
+        },
+        {
+          "step": 13,
+          "heading": "Comparison: Greater Than (>)",
+          "text": "Compares two sides. '10 > 5' returns the boolean true. It asks a yes/no question of the data."
+        },
+        {
+          "step": 14,
+          "heading": "Comparison: Less Than (<)",
+          "text": "The alligator eats the bigger number. '10 < 5' returns false. You use these to check if a user is old enough or a score is high enough."
+        },
+        {
+          "step": 15,
+          "heading": "Greater/Less or Equal (>=, <=)",
+          "text": "Adding an equals sign checks if it is bigger OR exactly the same. '10 >= 10' is true, whereas '10 > 10' is false."
+        },
+        {
+          "step": 16,
+          "heading": "The Danger of Loose Equality (==)",
+          "text": "Double equals checks if the values look similar, ignoring the data type. It thinks the number 5 and the string '5' are perfectly equal. This causes nasty bugs."
+        },
+        {
+          "step": 17,
+          "heading": "Strict Equality (===)",
+          "text": "Triple equals is what professionals use. It checks if the value AND the data type are identical. 5 === '5' is false. Always use triple equals."
+        },
+        {
+          "step": 18,
+          "heading": "Not Equal (!=)",
+          "text": "The exclamation mark means 'NOT'. So '10 != 5' is asking 'Is 10 NOT equal to 5?'. The answer is true."
+        },
+        {
+          "step": 19,
+          "heading": "Strict Not Equal (!==)",
+          "text": "Just like equality, use the strict version. '!==' ensures the two items are completely different in value or data type."
+        },
+        {
+          "step": 20,
+          "heading": "Logical AND (&&)",
+          "text": "The '&&' operator forces multiple rules to be true. 'hasKey && isDoorUnlocked' means BOTH things must be true before you can enter."
+        },
+        {
+          "step": 21,
+          "heading": "Logical OR (||)",
+          "text": "The '||' operator is lenient. 'hasCash || hasCreditCard' means as long as ONE of the sides is true, the whole statement is accepted as true."
+        },
+        {
+          "step": 22,
+          "heading": "Logical NOT (!)",
+          "text": "Putting an exclamation mark flips a boolean. If 'isRaining' is true, '!isRaining' becomes false. It is an instant reverse switch."
+        },
+        {
+          "step": 23,
+          "heading": "Short-Circuiting (&&)",
+          "text": "If JS sees a '&&' and the first half is false, it doesn't even bother reading the second half. It already knows the whole thing fails. It saves processing time."
+        },
+        {
+          "step": 24,
+          "heading": "Short-Circuiting (||)",
+          "text": "If JS sees an '||' and the first half is true, it skips the second half. It already found the one 'true' it needed to pass."
+        },
+        {
+          "step": 25,
+          "heading": "String Operators",
+          "text": "You already know '+' glues strings. But comparison operators work on text too! 'A' < 'B' is true because A comes first in the alphabet."
+        },
+        {
+          "step": 26,
+          "heading": "The Ternary Operator (?)",
+          "text": "It’s a mini yes/no decision on one line. 'score > 50 ? \"Pass\" : \"Fail\"'. It means: If score > 50 is true, output Pass. Otherwise, output Fail."
+        },
+        {
+          "step": 27,
+          "heading": "Nullish Coalescing (??)",
+          "text": "This operator checks if something is missing. 'let name = inputName ?? \"Guest\"'. It means: Use inputName, but if they gave me null or undefined, use 'Guest' instead."
+        },
+        {
+          "step": 28,
+          "heading": "Operator Precedence",
+          "text": "JS follows the order of operations (PEMDAS). 10 + 5 * 2 is 20, not 30, because multiplication happens before addition."
+        },
+        {
+          "step": 29,
+          "heading": "Using Parentheses ()",
+          "text": "You can force the computer to do math out of order by wrapping it in parentheses. (10 + 5) * 2 forces the addition first, giving 30."
+        },
+        {
+          "step": 30,
+          "heading": "Readability is Key",
+          "text": "You can chain 10 operators together on one line, but it makes the code unreadable. Break complex math into smaller variables so humans can understand it."
+        }
+      ]
+    },
+    {
+      "id": "lec04",
+      "title": "Lecture 04: Operators, Maths and Strings",
+      "date": "6 Jun 2026, 02:48 AM",
+      "duration": "1 hrs 55 mins 27 secs",
+      "content": [
+        {
+          "step": 1,
+          "heading": "The Math Object",
+          "text": "JS comes with a built-in calculator called the 'Math' object. It contains pre-written tools to handle complex numbers so you don't have to invent the formulas."
+        },
+        {
+          "step": 2,
+          "heading": "Math.round()",
+          "text": "Rounds a number to the nearest integer, just like in school. 4.4 becomes 4. 4.6 becomes 5."
+        },
+        {
+          "step": 3,
+          "heading": "Math.floor()",
+          "text": "The gravity function. It always pulls a decimal down to the nearest whole number. 4.9 becomes 4. It never rounds up."
+        },
+        {
+          "step": 4,
+          "heading": "Math.ceil()",
+          "text": "The ceiling function. It always pushes a decimal up to the next whole number. 4.1 becomes 5. Useful when you need whole buckets to hold items."
+        },
+        {
+          "step": 5,
+          "heading": "Math.trunc()",
+          "text": "The butcher. It completely chops off the decimal and leaves the whole number, ignoring rounding rules entirely. 4.99 becomes 4."
+        },
+        {
+          "step": 6,
+          "heading": "Math.random()",
+          "text": "Generates a random decimal between 0.0000 and 0.9999. It is the core engine for dice rolls, enemy spawns, and random events in coding."
+        },
+        {
+          "step": 7,
+          "heading": "Creating a Dice Roll",
+          "text": "To get a number from 1 to 6, you combine tools: Math.floor(Math.random() * 6) + 1. It scales the random decimal up, chops off the tail, and shifts it."
+        },
+        {
+          "step": 8,
+          "heading": "Math.max() & Math.min()",
+          "text": "Give it a list of numbers, and it finds the largest (max) or smallest (min). Math.max(10, 50, 2) instantly spits out 50."
+        },
+        {
+          "step": 9,
+          "heading": "Math.pow()",
+          "text": "The older way to do exponents before '**' existed. Math.pow(2, 3) means 2 to the power of 3."
+        },
+        {
+          "step": 10,
+          "heading": "Math.sqrt()",
+          "text": "Calculates the square root of a number. Math.sqrt(25) returns 5. Highly useful for calculating distances in video games or mapping software."
+        },
+        {
+          "step": 11,
+          "heading": "Math.PI",
+          "text": "Need the exact value of Pi for circle calculations? You don't need to type 3.14159... Just type Math.PI and the computer provides the exact value."
+        },
+        {
+          "step": 12,
+          "heading": "Deep Dive: Strings",
+          "text": "We know strings are text, but JS treats strings like an Array of characters. The word 'Cat' is actually treated as three separate letters: C, a, t."
+        },
+        {
+          "step": 13,
+          "heading": "The Length Property",
+          "text": "Typing 'password.length' tells you exactly how many characters are in the string. If the user typed '1234', the length is 4."
+        },
+        {
+          "step": 14,
+          "heading": "Index Positions",
+          "text": "Computers start counting at zero. In the word 'APPLE', 'A' is at position 0, 'P' is at position 1. This zero-based counting is a core rule of programming."
+        },
+        {
+          "step": 15,
+          "heading": "Accessing Characters",
+          "text": "You can pluck a single letter out of a word using brackets. If word = 'Code', word[0] gives you 'C'."
+        },
+        {
+          "step": 16,
+          "heading": "String Methods: toUpperCase()",
+          "text": "Instantly converts the entire string to capital letters. Useful for normalizing user input so 'yes', 'Yes', and 'YES' all look identical to the computer."
+        },
+        {
+          "step": 17,
+          "heading": "String Methods: toLowerCase()",
+          "text": "The exact opposite. Converts all characters to lowercase. A must-have for checking email addresses in a database."
+        },
+        {
+          "step": 18,
+          "heading": "String Methods: indexOf()",
+          "text": "Acts like a search engine for your word. word.indexOf('e') tells you exactly which numerical position the letter 'e' is located at within the string."
+        },
+        {
+          "step": 19,
+          "heading": "String Methods: slice()",
+          "text": "Acts like a pair of scissors. word.slice(0, 3) cuts out the letters starting at position 0 and ending at position 3. It pulls out a sub-section."
+        },
+        {
+          "step": 20,
+          "heading": "slice() with Negatives",
+          "text": "If you give slice a negative number, like slice(-2), it counts backward from the end of the word, extracting the last two letters."
+        },
+        {
+          "step": 21,
+          "heading": "String Methods: substring()",
+          "text": "Almost identical to slice, but it refuses to accept negative numbers. If you give it a negative, it treats it as a zero."
+        },
+        {
+          "step": 22,
+          "heading": "String Methods: replace()",
+          "text": "Finds a specific word inside a sentence and replaces it. sentence.replace('bad', 'good') swaps the first instance of 'bad' with 'good'."
+        },
+        {
+          "step": 23,
+          "heading": "String Methods: replaceAll()",
+          "text": "Regular replace() only targets the very first match it finds. replaceAll() hunts down every single instance in the entire paragraph and changes them all."
+        },
+        {
+          "step": 24,
+          "heading": "String Methods: split()",
+          "text": "A powerful tool that chops a string into pieces and turns it into an Array list. Splitting a sentence by spaces creates an array of individual words."
+        },
+        {
+          "step": 25,
+          "heading": "String Methods: trim()",
+          "text": "Users accidentally add spaces when typing. trim() shaves off invisible spaces from the far left and far right of a string, cleaning up the data."
+        },
+        {
+          "step": 26,
+          "heading": "String Methods: includes()",
+          "text": "Returns a simple true or false. sentence.includes('alien') checks if the word 'alien' exists anywhere inside the sentence."
+        },
+        {
+          "step": 27,
+          "heading": "String Methods: startsWith()",
+          "text": "Checks if the string begins with specific characters. Useful for checking if a URL starts with 'https://'."
+        },
+        {
+          "step": 28,
+          "heading": "String Methods: endsWith()",
+          "text": "Checks if the string ends with specific characters. Great for checking if a file upload ends in '.jpg' or '.png'."
+        },
+        {
+          "step": 29,
+          "heading": "Immutability of Strings",
+          "text": "Once a string is created, the original cannot be altered. Methods like toUpperCase() don't change the original word; they spit out a brand new copy of it."
+        },
+        {
+          "step": 30,
+          "heading": "Method Chaining",
+          "text": "You can attach tools back-to-back. word.trim().toUpperCase() first cleans the spaces, then immediately capitalizes the result in one smooth motion."
+        }
+      ]
+    },
+    {
+      "id": "lec05",
+      "title": "Lecture 05: Pattern Printing in Javascript(Beginner)",
+      "date": "6 Jun 2026, 08:32 PM",
+      "duration": "1 hrs 28 mins 43 secs",
+      "content": [
+        {
+          "step": 1,
+          "heading": "Why Print Patterns?",
+          "text": "Printing shapes with asterisks (*) seems pointless, but it is the ultimate gym workout for your brain. It forces you to master how the computer repeats tasks."
+        },
+        {
+          "step": 2,
+          "heading": "The Concept of Loops",
+          "text": "A loop is an instruction that says 'do this action 10 times in a row'. Instead of writing console.log 10 times, you write it once inside a loop."
+        },
+        {
+          "step": 3,
+          "heading": "The 'for' Loop Anatomy",
+          "text": "A for loop has 3 rules: Where to start counting, when to stop counting, and how to count (by 1s, by 2s). It looks like this: for(start; stop; step)."
+        },
+        {
+          "step": 4,
+          "heading": "The Iterator Variable (i)",
+          "text": "By tradition, programmers use the letter 'i' to act as the counter inside a loop. It stands for 'iterator'. As the loop runs, 'i' goes 1, 2, 3..."
+        },
+        {
+          "step": 5,
+          "heading": "Printing a Straight Line",
+          "text": "To print 5 stars in a row, we use a loop that runs 5 times, adding a '*' to a string variable each time, and then printing the final string."
+        },
+        {
+          "step": 6,
+          "heading": "The Concept of Rows and Columns",
+          "text": "Pattern printing works like an Excel spreadsheet or a chessboard. You have rows (going down) and columns (going across). You must control both."
+        },
+        {
+          "step": 7,
+          "heading": "Nested Loops",
+          "text": "To handle 2D shapes, we use a loop INSIDE another loop. The Outer Loop controls the Rows (going down). The Inner Loop controls the Columns (printing across)."
+        },
+        {
+          "step": 8,
+          "heading": "How Nested Loops Execute",
+          "text": "For every ONE step the Outer Loop takes, the Inner Loop runs completely from start to finish. If Outer is 3 and Inner is 3, the code runs 9 times total."
+        },
+        {
+          "step": 9,
+          "heading": "The Square Pattern",
+          "text": "To print a square, the Outer loop runs 5 times (for 5 rows), and the Inner loop runs 5 times (for 5 columns of stars). The width equals the height."
+        },
+        {
+          "step": 10,
+          "heading": "Line Breaks (\\n)",
+          "text": "In the console, you can't just press 'Enter' to start a new line. You must use the invisible character '\\n'. It tells the computer to drop down one row."
+        },
+        {
+          "step": 11,
+          "heading": "Resetting the Row",
+          "text": "When printing a square, after the Inner loop finishes a row of stars, you must add '\\n' in the Outer loop to reset the carriage for the next row."
+        },
+        {
+          "step": 12,
+          "heading": "The Right Triangle Pattern",
+          "text": "Instead of the Inner loop always running 5 times, we make the Inner loop run 'i' times (the current row number). Row 1 gets 1 star. Row 2 gets 2 stars."
+        },
+        {
+          "step": 13,
+          "heading": "The Inverted Triangle",
+          "text": "To flip the triangle upside down, we just reverse the Outer loop. We start the counter at 5, and tell it to count down to 1 using 'i--'."
+        },
+        {
+          "step": 14,
+          "heading": "Visualizing the Space",
+          "text": "Empty space in a pattern is not 'nothing'. Space is a physical character (' ') that must be deliberately printed by your loops."
+        },
+        {
+          "step": 15,
+          "heading": "The Mirrored Right Triangle",
+          "text": "To push the triangle to the right side, you need two Inner loops! The first Inner loop prints blank spaces, and the second Inner loop prints the stars."
+        },
+        {
+          "step": 16,
+          "heading": "Balancing Spaces and Stars",
+          "text": "For a mirrored triangle of size 5: Row 1 has 4 spaces and 1 star. Row 2 has 3 spaces and 2 stars. The math of spaces + stars always equals the total size."
+        },
+        {
+          "step": 17,
+          "heading": "The Pyramid Pattern",
+          "text": "A full pyramid requires precise spacing. You print spaces to push the stars to the center, then you print odd numbers of stars (1, 3, 5, 7) per row."
+        },
+        {
+          "step": 18,
+          "heading": "Formula for Pyramid Stars",
+          "text": "To get odd numbers for a pyramid, the formula is (2 * i - 1). If you are on row 3: 2 * 3 - 1 = 5 stars. The math dictates the shape."
+        },
+        {
+          "step": 19,
+          "heading": "The Inverted Pyramid",
+          "text": "Just like the inverted triangle, you take your perfect pyramid code and tell the Outer loop to run backward. The math of the inner loops stays exactly the same."
+        },
+        {
+          "step": 20,
+          "heading": "The Diamond Pattern",
+          "text": "A diamond is just a regular Pyramid and an Inverted Pyramid glued together. You simply write the code for the top half, then write the code for the bottom half below it."
+        },
+        {
+          "step": 21,
+          "heading": "Hollow Patterns",
+          "text": "Printing an empty box with a border requires 'if/else' logic. You tell the Inner loop: 'Only print a star IF you are on the very first or very last edge. Otherwise, print a space.'"
+        },
+        {
+          "step": 22,
+          "heading": "Finding the Edges",
+          "text": "In a 5x5 square, the edges are when row == 1, row == 5, column == 1, or column == 5. The 'if' statement looks for these exact coordinates to draw the borders."
+        },
+        {
+          "step": 23,
+          "heading": "Hollow Triangles",
+          "text": "Similar to hollow squares, but the diagonal edge is moving. You print a star if it's the bottom row, the left edge, or if row == column (the diagonal line)."
+        },
+        {
+          "step": 24,
+          "heading": "Number Patterns",
+          "text": "Instead of printing '*', you print the variable 'i' (the row) or 'j' (the column). This creates grids of numbers that count up or down."
+        },
+        {
+          "step": 25,
+          "heading": "Floyd's Triangle",
+          "text": "A number triangle where the numbers keep counting up forever (1, then 2 3, then 4 5 6). You need an external 'counter' variable outside the loops that keeps growing."
+        },
+        {
+          "step": 26,
+          "heading": "Character Patterns (A, B, C)",
+          "text": "JS can convert numbers into alphabet letters using String.fromCharCode(). You can loop numbers, convert them to letters, and print a triangle of alphabets."
+        },
+        {
+          "step": 27,
+          "heading": "The Hourglass Pattern",
+          "text": "An hourglass is the opposite of a diamond. It is an Inverted Pyramid on top, and a regular Pyramid on the bottom. Stack the loops accordingly."
+        },
+        {
+          "step": 28,
+          "heading": "Debugging Infinite Loops",
+          "text": "If you accidentally tell a loop to run until 'i < 10', but you never tell 'i' to increase, 'i' stays 0 forever. The loop never stops, and your browser crashes."
+        },
+        {
+          "step": 29,
+          "heading": "Breaking Loops Early",
+          "text": "If you find what you need early, you can use the 'break' keyword. It instantly destroys the loop and moves on, saving the computer's energy."
+        },
+        {
+          "step": 30,
+          "heading": "Pattern Mastery",
+          "text": "If you can comfortably build a hollow diamond, you have mastered loops, variables, logic, and spatial thinking. You are officially ready for complex algorithms."
+        }
+      ]
+    }
+  ]
+}
